@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gym Fitness - Get Fit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Gym Fitness</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#tips">Fitness Tips</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="mode-toggle">🌙 Dark Mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2>Welcome to Gym Fitness</h2>
+      <p>Your journey to a healthier and stronger you starts here.</p>
+      <button onclick="startWorkout()">Start Your Workout</button>
+    </div>
+  </section>
+
+  <section id="classes">
+    <div class="container">
+      <h2>Our Classes</h2>
+      <div class="class-cards">
+        <div class="class-card">
+          <img src="images/yoga.jpg" alt="Yoga" />
+          <h3>Yoga</h3>
+          <p>Relax and strengthen your body.</p>
+        </div>
+        <div class="class-card">
+          <img src="images/hiit.jpg" alt="HIIT" />
+          <h3>HIIT</h3>
+          <p>High-intensity interval training.</p>
+        </div>
+        <div class="class-card">
+          <img src="images/weights.jpg" alt="Weightlifting" />
+          <h3>Weightlifting</h3>
+          <p>Build strength and muscle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="container">
+      <h2>Fitness Tips</h2>
+      <ul id="fitness-tips"></ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gym Fitness. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
